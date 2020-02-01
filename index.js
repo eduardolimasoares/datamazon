@@ -34,7 +34,7 @@ app.get('/', (req, res)=>{
         classMenuQuemSomos: '', 
         classMenuNossosServicos: '',
         classMenuContatos: '',
-        slider: `<h3>Datamazon <br> Pesquisa e Análise de dados <br></h3>`
+        slider: `<h3>Datamazon <br> Consultoria, pesquisa e Análise de dados <br></h3>`
     })
 })
 app.get('/quemsomos', (req, res)=>{
