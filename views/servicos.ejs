@@ -1,0 +1,47 @@
+<!-- faq_area_Start -->
+<div class="faq_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="serction_title_large mb-95">
+                        <h2>
+                            Nossos Serviços
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div id="accordion">
+
+
+                        
+                        <% servicos.forEach(item => { %>
+                            <div class="card">
+
+                                    <div class="card-header" id="heading<%= item.id %>">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse<%= item.id %>" aria-expanded="false" aria-controls="collapse<%= item.id %>">
+                                                <%= item.titulo %>
+                                            </button>
+                                        </h5>
+                                    </div>
+        
+                                    <div id="collapse<%= item.id %>" class="collapse" aria-labelledby="heading<%= item.id %>" data-parent="#accordion" style="">
+                                        <div class="card-body">
+                                            <%= item.conteudo %>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                        <% }) %>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq_area_end -->
